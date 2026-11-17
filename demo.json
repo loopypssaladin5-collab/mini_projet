@@ -1,0 +1,297 @@
+{
+  "version": 1,
+  "compteurs": {
+    "F": 2,
+    "E": 6,
+    "C": 3,
+    "ordre": 9,
+    "I": 9,
+    "V": 3
+  },
+  "politique_notes": "ignorer",
+  "personnes": [
+    {
+      "type": "etudiant",
+      "id": "E001",
+      "nom": "Bernard",
+      "prenom": "Alice",
+      "email": "alice.bernard@etu.fr",
+      "filiere": "Genie electrique"
+    },
+    {
+      "type": "etudiant",
+      "id": "E002",
+      "nom": "Petit",
+      "prenom": "Hugo",
+      "email": "hugo.petit@etu.fr",
+      "filiere": "Genie electrique"
+    },
+    {
+      "type": "etudiant",
+      "id": "E003",
+      "nom": "Moreau",
+      "prenom": "Lina",
+      "email": "lina.moreau@etu.fr",
+      "filiere": "Genie electrique"
+    },
+    {
+      "type": "etudiant",
+      "id": "E004",
+      "nom": "Roux",
+      "prenom": "Yanis",
+      "email": "yanis.roux@etu.fr",
+      "filiere": "Genie electrique"
+    },
+    {
+      "type": "etudiant",
+      "id": "E005",
+      "nom": "Fournier",
+      "prenom": "Emma",
+      "email": "emma.fournier@etu.fr",
+      "filiere": "Genie electrique"
+    },
+    {
+      "type": "etudiant",
+      "id": "E006",
+      "nom": "Girard",
+      "prenom": "Noe",
+      "email": "noe.girard@etu.fr",
+      "filiere": "Genie electrique"
+    },
+    {
+      "type": "formateur",
+      "id": "F001",
+      "nom": "Martin",
+      "prenom": "Claire",
+      "email": "claire.martin@ecole.fr",
+      "specialite": "Informatique"
+    },
+    {
+      "type": "formateur",
+      "id": "F002",
+      "nom": "Durand",
+      "prenom": "Paul",
+      "email": "paul.durand@ecole.fr",
+      "specialite": "Electronique"
+    }
+  ],
+  "cours": [
+    {
+      "id": "C001",
+      "titre": "Programmation Python",
+      "capacite": 3,
+      "formateur_id": "F001",
+      "creneaux": [
+        {
+          "jour": "lundi",
+          "debut": "08:00",
+          "fin": "10:00"
+        },
+        {
+          "jour": "mercredi",
+          "debut": "14:00",
+          "fin": "16:00"
+        }
+      ]
+    },
+    {
+      "id": "C002",
+      "titre": "Algebre lineaire",
+      "capacite": 2,
+      "formateur_id": "F002",
+      "creneaux": [
+        {
+          "jour": "mardi",
+          "debut": "10:00",
+          "fin": "12:00"
+        }
+      ]
+    },
+    {
+      "id": "C003",
+      "titre": "Electronique analogique",
+      "capacite": 3,
+      "formateur_id": "F002",
+      "creneaux": [
+        {
+          "jour": "lundi",
+          "debut": "09:00",
+          "fin": "11:00"
+        }
+      ]
+    }
+  ],
+  "inscriptions": [
+    {
+      "id": "I001",
+      "etudiant_id": "E001",
+      "cours_id": "C001",
+      "statut": "confirmee",
+      "ordre": 1
+    },
+    {
+      "id": "I002",
+      "etudiant_id": "E002",
+      "cours_id": "C001",
+      "statut": "confirmee",
+      "ordre": 2
+    },
+    {
+      "id": "I003",
+      "etudiant_id": "E003",
+      "cours_id": "C001",
+      "statut": "confirmee",
+      "ordre": 3
+    },
+    {
+      "id": "I004",
+      "etudiant_id": "E004",
+      "cours_id": "C001",
+      "statut": "en_attente",
+      "ordre": 4
+    },
+    {
+      "id": "I005",
+      "etudiant_id": "E001",
+      "cours_id": "C002",
+      "statut": "confirmee",
+      "ordre": 5
+    },
+    {
+      "id": "I006",
+      "etudiant_id": "E002",
+      "cours_id": "C002",
+      "statut": "annulee",
+      "ordre": 6
+    },
+    {
+      "id": "I007",
+      "etudiant_id": "E003",
+      "cours_id": "C002",
+      "statut": "confirmee",
+      "ordre": 7
+    },
+    {
+      "id": "I008",
+      "etudiant_id": "E005",
+      "cours_id": "C003",
+      "statut": "confirmee",
+      "ordre": 8
+    },
+    {
+      "id": "I009",
+      "etudiant_id": "E006",
+      "cours_id": "C003",
+      "statut": "confirmee",
+      "ordre": 9
+    }
+  ],
+  "evaluations": [
+    {
+      "id": "V001",
+      "cours_id": "C001",
+      "titre": "TP1",
+      "coefficient": 1.0,
+      "seuil": 10.0,
+      "notes": {
+        "E001": 14.0,
+        "E002": 8.0,
+        "E003": 12.0
+      }
+    },
+    {
+      "id": "V002",
+      "cours_id": "C001",
+      "titre": "Examen",
+      "coefficient": 2.0,
+      "seuil": 10.0,
+      "notes": {
+        "E001": 16.0,
+        "E002": 9.0
+      }
+    },
+    {
+      "id": "V003",
+      "cours_id": "C002",
+      "titre": "DS1",
+      "coefficient": 1.0,
+      "seuil": 10.0,
+      "notes": {
+        "E001": 11.0,
+        "E003": 7.0
+      }
+    }
+  ],
+  "historique": [
+    {
+      "date": "2026-11-17T17:59:25",
+      "action": "CREATION_COURS",
+      "details": "C001'Programmation Python' (capacite 3)"
+    },
+    {
+      "date": "2026-11-17T17:59:25",
+      "action": "CREATION_COURS",
+      "details": "C002'Algebre lineaire' (capacite 2)"
+    },
+    {
+      "date": "2026-11-17T17:59:25",
+      "action": "CREATION_COURS",
+      "details": "C003'Electronique analogique' (capacite 3)"
+    },
+    {
+      "date": "2026-11-17T17:59:25",
+      "action": "INSCRIPTION",
+      "details": "Alice Bernard -> 'Programmation Python' (confirmee)"
+    },
+    {
+      "date": "2026-11-17T17:59:25",
+      "action": "INSCRIPTION",
+      "details": "Hugo Petit -> 'Programmation Python' (confirmee)"
+    },
+    {
+      "date": "2026-11-17T17:59:25",
+      "action": "INSCRIPTION",
+      "details": "Lina Moreau -> 'Programmation Python' (confirmee)"
+    },
+    {
+      "date": "2026-11-17T17:59:25",
+      "action": "INSCRIPTION",
+      "details": "Yanis Roux -> 'Programmation Python' (en_attente)"
+    },
+    {
+      "date": "2026-11-17T17:59:25",
+      "action": "INSCRIPTION",
+      "details": "Alice Bernard -> 'Algebre lineaire' (confirmee)"
+    },
+    {
+      "date": "2026-11-17T17:59:25",
+      "action": "INSCRIPTION",
+      "details": "Hugo Petit -> 'Algebre lineaire' (confirmee)"
+    },
+    {
+      "date": "2026-11-17T17:59:25",
+      "action": "INSCRIPTION",
+      "details": "Lina Moreau -> 'Algebre lineaire' (en_attente)"
+    },
+    {
+      "date": "2026-11-17T17:59:25",
+      "action": "INSCRIPTION",
+      "details": "Emma Fournier -> 'Electronique analogique' (confirmee)"
+    },
+    {
+      "date": "2026-11-17T17:59:25",
+      "action": "INSCRIPTION",
+      "details": "Noe Girard -> 'Electronique analogique' (confirmee)"
+    },
+    {
+      "date": "2026-11-17T17:59:25",
+      "action": "DESISTEMENT",
+      "details": "Hugo Petit quitte 'Algebre lineaire'"
+    },
+    {
+      "date": "2026-11-17T17:59:25",
+      "action": "PROMOTION",
+      "details": "Lina Moreau passe de la file d'attente a 'Algebre lineaire'"
+    }
+  ]
+}
